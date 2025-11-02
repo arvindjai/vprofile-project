@@ -6,6 +6,10 @@
 
 set -e
 
+# Set hostname
+echo "prometheus" > /etc/hostname
+hostname prometheus
+
 # Variables
 PROM_VERSION="3.5.0"
 DOWNLOAD_URL="https://github.com/prometheus/prometheus/releases/download/v${PROM_VERSION}/prometheus-${PROM_VERSION}.linux-amd64.tar.gz"
