@@ -92,7 +92,7 @@ chown -R prometheus:prometheus "${DATA_DIR}"
 systemctl daemon-reload
 systemctl enable prometheus
 systemctl start prometheus
-systemctl status prometheus
+systemctl status prometheus --no-pager
 
 # Display service file for verification
 cat "${SERVICE_FILE}"
