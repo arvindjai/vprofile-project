@@ -105,7 +105,7 @@ git checkout monitoring
 # Move titan to /opt and set up virtual environment
 mkdir -p /opt/titan
 echo "Moving Flask app files to /opt/titan..."
-mv flask-app/*  /opt/titan
+mv titan/*  /opt/titan
 cd /opt/titan
 echo "Creating Python virtual environment..."
 python3 -m venv venv
