@@ -1,17 +1,17 @@
 pipeline {
     agent any
     tools {
-        maven "MAVEN3.9.9"
-        jdk "JDK17"
+        maven "MAVEN3.9.11"
+        jdk "JDK21"
     }
     
     environment {
         SNAP_REPO = 'vprofile-snapshot'
 		NEXUS_USER = 'admin'
-		NEXUS_PASS = 'admin123'
+		NEXUS_PASS = 'nexus@123'
 		RELEASE_REPO = 'vprofile-release'
 		CENTRAL_REPO = 'vpro-maven-central'
-		NEXUSIP = '172.31.43.144'
+		NEXUSIP = '172.31.4.160'
 		NEXUSPORT = '8081'
 		NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
