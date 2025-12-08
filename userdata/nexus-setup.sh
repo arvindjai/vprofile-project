@@ -18,7 +18,7 @@ rm -rf /tmp/nexus/nexus.tar.gz
 cp -r /tmp/nexus/* /opt/nexus/
 sleep 5
 useradd nexus
-chown -R nexus.nexus /opt/nexus
+chown -R nexus:nexus /opt/nexus
 cat <<EOT>> /etc/systemd/system/nexus.service
 [Unit]
 Description=nexus service
